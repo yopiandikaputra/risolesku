@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risolesku - Jual Risoles Enak via WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f7f3;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e8d3b806-1f34-426e-bbef-48640184a8a6.png') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+        }
+        
+        .risoles-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .whatsapp-btn, 
+        .order-channel-btn {
+            background: #25D366;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: scale(1.05);
+        }
+        
+        .testimonial-card {
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiky93VivwvUGA27NCPDZ4SjAnn0XLw0d-DdgzqCzYPm6AgwItIfWiDmdn2OzhyfrKCEZkERu3bjxiKfTsDVYSBdVIs35_G8VemSWu_31kvADvQNgyBbSxWKmfi2IZnroye9usR4q4Aj03DUckeWDEMI_KntE342YAZLfC5q4ssgfvhB35ARnKwq136LVw/s519/logo1.png" alt="Logo Risolesku dengan gambar risoles emas" class="h-10 w-10 mr-2">
+                    <span class="text-xl font-bold text-amber-800">Risolesku</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-amber-800 hover:text-amber-600">Beranda</a>
+                    <a href="#products" class="text-gray-600 hover:text-amber-600">Produk</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-amber-600">Testimoni</a>
+                    <a href="#contact" class="text-gray-600 hover:text-amber-600">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 hover:text-amber-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex items-center pt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center text-white">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Risoles Mama Alby</h1>
+            <p class="text-xl md:text-2xl mb-6">Pesan sekarang, kami antar dalam 1 jam!</p>
+            <a href="https://wa.me/6281291414495?text=Halo,%20saya%20mau%20pesan%20risoles" class="whatsapp-btn inline-block px-6 py-3 rounded-full text-white font-bold text-lg">
+                <i class="fab fa-whatsapp mr-2"></i> Pesan via WhatsApp
+            </a>        
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-amber-800 mb-4">Kenapa Memilih Risolesku?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Risoles kami dibuat dengan bahan premium dan resep turun temurun yang sudah teruji kelezatannya</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-4">
+                    <div class="bg-amber-100 rounded-full p-4 w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-seedling text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-amber-800 mb-2">Bahan Premium</h3>
+                    <p class="text-gray-600">Menggunakan bahan pilihan terbaik tanpa pengawet</p>
+                </div>
+                
+                <div class="text-center p-4">
+                    <div class="bg-amber-100 rounded-full p-4 w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-amber-800 mb-2">Fresh Every Day</h3>
+                    <p class="text-gray-600">Dibuat setiap pagi, tidak pernah menggunakan bahan kemarin</p>
+                </div>
+                
+                <div class="text-center p-4">
+                    <div class="bg-amber-100 rounded-full p-4 w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-truck text-amber-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-amber-800 mb-2">Gratis Ongkir</h3>
+                    <p class="text-gray-600">Gratis ongkir untuk wilayah tertentu dengan min. pembelian</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Kami -->
+    <section id="products" class="py-12 bg-amber-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-amber-800 mb-4">Menu Risoles Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Berbagai varian rasa yang selalu menjadi favorit pelanggan</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Produk 1 -->
+                <div class="risoles-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/95b2da8e-1599-40d3-8181-e379d98fce6f.png" alt="Risoles ragout ayam dengan kulit crispy berwarna keemasan" class="w-full h-48 object-cover">
+                        <span class="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 text-xs font-bold rounded">Best Seller</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Risoles Ragout Ayam</h3>
+                        <p class="text-gray-600 mb-4">Isian ayam cincang dengan sayuran segar dan saus spesial</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-700">Rp3.500/pcs</span>
+                            <a href="https://wa.me/6281291414495?text=Saya%20mau%20pesan%20Risoles%20Ragout%20Ayam" class="whatsapp-btn px-4 py-2 rounded-full text-white text-sm">
+                                <i class="fab fa-whatsapp mr-1"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 2 -->
+                <div class="risoles-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3ef2237c-5113-4fbc-bd36-4d1ececea6f6.png" alt="Risoles keju mozarella dengan tekstur meleleh dan kulit emas kecoklatan" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Risoles Keju Mozarella</h3>
+                        <p class="text-gray-600 mb-4">Keju mozarella meleleh dengan taburan parsley segar</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-700">Rp4.000/pcs</span>
+                            <a href="https://wa.me/6281291414495?text=Saya%20mau%20pesan%20Risoles%20Keju%20Mozarella" class="whatsapp-btn px-4 py-2 rounded-full text-white text-sm">
+                                <i class="fab fa-whatsapp mr-1"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 3 -->
+                <div class="risoles-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://awsimages.detik.net.id/community/media/visual/2023/10/05/resep-risoles-suun-dan-sayuran_43.jpeg?w=1200" alt="Risoles sayuran dengan tampilan potongan penuh sayuran segar" class="w-full h-48 object-cover">
+                        <span class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 text-xs font-bold rounded">Vegetarian</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Risoles Sayuran</h3>
+                        <p class="text-gray-600 mb-4">Campuran sayuran segar dengan bumbu rempah spesial</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-amber-700">Rp3.000/pcs</span>
+                            <a href="https://wa.me/6281291414495?text=Saya%20mau%20pesan%20Risoles%20Sayuran" class="whatsapp-btn px-4 py-2 rounded-full text-white text-sm">
+                                <i class="fab fa-whatsapp mr-1"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paket Hemat -->
+                <div class="risoles-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 col-span-1 md:col-span-2 lg:col-span-1">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/25fa8e37-ec1e-4d8a-8a75-2caf35a01284.png" alt="Paket kombinasi risoles berbagai rasa dengan kemasan menarik" class="w-full h-48 object-cover">
+                        <span class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 text-xs font-bold rounded">Special</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-amber-800 mb-2">Paket Komplit</h3>
+                        <p class="text-gray-600 mb-4">10 risoles campur (4 ragout ayam, 3 keju, 3 sayuran)</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-lg font-bold text-amber-700">Rp35.000</span>
+                                <span class="text-sm text-gray-500 line-through ml-2">Rp38.000</span>
+                            </div>
+                            <a href="https://wa.me/6281291414495?text=Saya%20mau%20pesan%20Paket%20Komplit%2010%20risoles" class="whatsapp-btn px-4 py-2 rounded-full text-white text-sm">
+                                <i class="fab fa-whatsapp mr-1"></i> Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimonials" class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-amber-800 mb-4">Kata Pelanggan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Apa kata mereka tentang risoles buatan kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Testimoni 1 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="data:image/webp;base64,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" alt="Foto profil Bu Ani, pelanggan setia berusia 40-an" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-bold text-gray-800">Bu Ani</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Risolesnya selalu fresh dan enak banget! Sudah langganan 2 tahun terakhir untuk acara arisan."</p>
+                </div>
+                
+                <!-- Testimoni 2 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://assets.digination.id/crop/0x0:0x0/x/photo/2019/06/13/3600492932.jpg" alt="Foto profil Pak Budi, pengusaha catering" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-bold text-gray-800">Pak Budi</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Saya pesan rutin untuk catering. Pelayanannya cepat dan risolesnya selalu ludes habis!"</p>
+                </div>
+                
+                <!-- Testimoni 3 -->
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://th.bing.com/th/id/OIP.TZsqvJLjiPAI6F2gWt4Y-wHaEb?w=275&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Foto profil Siti, mahasiswa" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <h4 class="font-bold text-gray-800">Bu Ani</h4>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Keju mozarellanya nagih banget! Cocok buat teman nongkrong."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-amber-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Siap Pesan Risoles Lezat Kami?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Pesan sekarang sebelum kehabisan! Kami buat setiap pagi dengan bahan fresh.</p>
+            <a href="https://wa.me/6281291414495?text=Halo,%20saya%20mau%20pesan%20risoles" class="whatsapp-btn inline-block px-8 py-3 rounded-full text-white font-bold text-lg bg-green-600">
+                <i class="fab fa-whatsapp mr-2"></i> Hubungi Kami via WhatsApp
+            </a>
+            <div class="mt-6 flex flex-wrap justify-center gap-4">
+                <a href="https://www.instagram.com/dapurmamaallbyy" class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg font-medium">
+                    <i class="fab fa-instagram mr-2"></i> Instagram
+                </a>
+                <a href="https://www.tiktok.com/@dapurmamaalby" class="bg-black text-white px-6 py-3 rounded-lg font-medium">
+                    <i class="fab fa-tiktok mr-2"></i> TikTok
+                </a>
+                <a href="#" class="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium">
+                    <i class="fas fa-store mr-2"></i> Shopee
+                </a>
+                <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-lg font-medium">
+                    <i class="fas fa-store-alt mr-2"></i> Tokopedia
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiky93VivwvUGA27NCPDZ4SjAnn0XLw0d-DdgzqCzYPm6AgwItIfWiDmdn2OzhyfrKCEZkERu3bjxiKfTsDVYSBdVIs35_G8VemSWu_31kvADvQNgyBbSxWKmfi2IZnroye9usR4q4Aj03DUckeWDEMI_KntE342YAZLfC5q4ssgfvhB35ARnKwq136LVw/s519/logo1.png" alt="Logo Risolesku" class="h-8 w-8 mr-2">
+                        Risolesku
+                    </h3>
+                    <p class="text-gray-400">Risoles homemade premium dengan bahan pilihan terbaik.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li><i class="fab fa-whatsapp mr-2 text-green-400"></i> 0812-9141-4495</li>
+                        <li><i class="fas fa-envelope mr-2 text-yellow-400"></i> info@risolesku.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2 text-red-400"></i> Ciledug, Sudimara Timur Kota Tangerang</li>
+                        <li class="mt-4 text-sm">Beli juga melalui:</li>
+                        <li class="flex space-x-3">
+                            <a href="https://www.instagram.com/dapurmamaalbyy" class="text-pink-500"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@dapurmamaalby" class="text-dark"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="text-orange-500"><i class="fas fa-store"></i></a>
+                            <a href="#" class="text-green-500"><i class="fas fa-store-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Jam Operasional</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Senin-Jumat: 08.00 - 17.00</li>
+                        <li>Sabtu: 08.00 - 15.00</li>
+                        <li>Minggu & Hari Libur: Tutup</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>© 2025 Risolesku. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6">
+        <a href="https://wa.me/6281291414495?text=Halo,%20saya%20mau%20pesan%20risoles" class="whatsapp-btn p-4 rounded-full shadow-lg flex items-center justify-center animate-bounce">
+            <i class="fab fa-whatsapp text-white text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle (optional)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenuItems = document.querySelector('.md\\:hidden + div');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                // This is a simple toggle - you can implement proper mobile menu as needed
+                alert('Menu mobile akan muncul di sini (untuk demo sederhana)');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
